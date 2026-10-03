@@ -1,5 +1,3 @@
-// Kesalahan 4: logika. Program berjalan mulus, tidak ada pesan apa pun,
-// tetapi hasilnya salah. Rata-rata 80, 75, dan 90 seharusnya 81.67, bukan 81.
 #include <iostream>
 int main() {
 int tugas = 80;

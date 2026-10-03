@@ -18,20 +18,20 @@ Folder kode Pertemuan 2 Pemrograman Terstruktur. Buka folder ini di Visual Studi
 
 ```
 === SiNilai v0.1 ===
-Nama      : Siti Aminah
-NPM       : 2024010101
+Nama      : Muhammad Syahrul Mukmin
+NPM       : 2510010213
 Kehadiran : 100
-Mingguan  : 85.5
-UTS       : 78
-UAS       : 80
+Mingguan  : 90
+UTS       : 85
+UAS       : 90
 
 --- Kartu Data Mahasiswa ---
-Nama      : Siti Aminah
-NPM       : 2024010101
+Nama      : Muhammad Syahrul Mukmin
+NPM       : 2510010213
 Kehadiran : 100
-Mingguan  : 85.5
-UTS       : 78
-UAS       : 80
+Mingguan  : 90
+UTS       : 85
+UAS       : 90
 ```
 
 ## Yang dikumpulkan mahasiswa
@@ -39,5 +39,4 @@ UAS       : 80
 Folder `p02` di repository `pt-NPM` berisi `sinilai_v01.cpp`, dan  `README.md`. Lihat Modul Pertemuan 2 bagian E.
 
 ## Deklarasi AI
-
-Tuliskan AI yang digunakan, prompt, dan umpan balik AI
+Chat Gpt, Data input dapat diberikan melalui file contoh_masukan.txt, kemudian program menampilkan data tersebut dalam bentuk Kartu Data Mahasiswa., dan Input dari file contoh_masukan.txt dapat digunakan untuk mengisi data mahasiswa. Output program menampilkan Nama dan NPM pada bagian Kartu Data Mahasiswa.
