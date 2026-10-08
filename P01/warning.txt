@@ -1,0 +1,32 @@
+2. Hapus tanda kutip penutup pada hello.cpp, kemudian lakukan build ulang. Pesan error yang muncul adalah:
+
+hello.cpp: In function 'int main()':
+hello.cpp:3:31: error: expected ';' before 'return'
+    3 | std::cout << "Halo dari C++\n"
+      |                               ^
+      |                               ;
+    4 | return 0;
+      | ~~~~~~
+
+Kesalahan terjadi pada baris ke-3 karena perintah std::cout tidak diakhiri dengan tanda titik koma (;). Akibatnya, compiler menganggap perintah tersebut belum selesai ketika menemukan perintah return pada baris berikutnya.
+
+
+3. Jika #include <iostream> pada hello.cpp dihapus, tahap yang mengalami kegagalan adalah proses kompilasi. 
+Hal ini terjadi ketika compiler mencoba mengenali std::cout, tetapi library yang mendefinisikan std::cout sudah tidak disertakan. 
+Pesan yang muncul adalah:
+
+hello.cpp:1:1: note: 'std::cout' is defined in header '<iostream>'; this is probably fixable by adding '#include <iostream>'
+  +++ |+#include <iostream>
+    1 | int main() {
+
+Compiler tidak dapat mengenali std::cout sebagai bagian dari std karena header <iostream> telah dihapus. Oleh sebab itu, 
+compiler menyarankan untuk menambahkan kembali #include <iostream>.
+
+
+4. Pesan yang hilang adalah pesan peringatan (warning) dari compiler. 
+Jika opsi -Wall -Wextra tidak digunakan,
+ beberapa peringatan yang sebenarnya dapat membantu menemukan potensi masalah dalam kode tidak akan ditampilkan.
+ Hal ini dapat merugikan karena program masih bisa berhasil dikompilasi sehingga kita mungkin menganggap kode sudah benar.
+  Kesalahan logika, seperti nilai jumlah atau rerata yang tetap 0, juga belum tentu dianggap sebagai error oleh compiler. Selain itu, 
+  peringatan mengenai variabel yang sudah dideklarasikan tetapi belum digunakan bisa tidak terlihat. Akibatnya, 
+  bug mungkin baru diketahui ketika program dijalankan atau setelah hasil program diperiksa.
